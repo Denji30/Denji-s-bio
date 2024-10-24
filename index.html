@@ -118,7 +118,10 @@
         <source src="https://cdn.glitch.global/a07b2f64-ed79-4da8-9ac9-f585a3ef4748/Background.mp4?v=1729798369893" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-
+    <audio class="audio-bg" autoplay muted loop>
+    <source src="https://cdn.glitch.global/a07b2f64-ed79-4da8-9ac9-f585a3ef4748/music.mp3?v=1729798354360" type="audio/mp3">
+        Your browser does not support the audio tag.
+                
     <div class="container">
         <div class="title">𝙳𝚎𝚗𝚓𝚒'𝚜 𝙱𝚒𝚘</div>
 
@@ -154,7 +157,6 @@
                 <li><a href="https://t.me/Stark_Network1">STARK NETWORK🇮🇳</a></li>
                 <li><a href="https://t.me/indian_scripterr">INDIAN SCRIPTER</a></li>
                 <li><a href="https://t.me/ITA_CHI_2">IᴛᴀᴄʜI ᴇᴛᴡᴏʀᴋ ⚡</a></li>
-                <audio id="background-music" src="https://cdn.glitch.global/a07b2f64-ed79-4da8-9ac9-f585a3ef4748/music.mp3?v=1729798354360" loop preload="auto"></audio>
                 
             </ul>
         </div>
@@ -162,21 +164,3 @@
 
 </body>
 </html>
-
-  <script>
-    // JavaScript to handle the click event on the overlay
-    const overlay = document.getElementById('overlay');
-    overlay.addEventListener('click', function() {
-      // Play the music
-      const audio = document.getElementById('background-music');
-      audio.play();
-      
-      // Add the fade-out class to trigger the fade-out animation
-      this.classList.add('fade-out');
-      
-      // Remove the overlay from the DOM after the animation ends
-      setTimeout(() => {
-        overlay.remove();
-      }, 1000); // Corresponds to the animation duration
-    });
-  </script>
